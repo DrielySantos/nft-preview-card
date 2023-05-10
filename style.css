@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 2rem;
+    gap: 25px;
+    background-color: hsl(217, 54%, 11%);
+    max-width: 1440px;   
+    overflow: hidden;
+}
+
+.container{
+    /* height: 90vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-body{
+    background-color:hsl(216, 50%, 16%);
+    max-width: 20rem;
+    height: 37rem;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.card-body__image{
+    background-image: url(./images/image-equilibrium.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 90%;
+    height: 35%;
+    margin: 15px;
+    padding: 9rem;
+    border-radius: 10px;
+}
+
+.card-body__image:hover{
+    background-image: url(./images/icon-view.svg), url(./images/image-equilibrium.jpg);
+    background-repeat: no-repeat;
+    background-size: 20%, contain;
+    background-position: center center;
+    background-color: hsl(178, 100%, 50%);
+    background-blend-mode: hard-light;
+    cursor: pointer;
+}
+
+.card-body__content{
+    margin-top: 3rem;
+}
+
+h1 {
+    margin-left: 20px;
+    text-align: left;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+}
+
+h1:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: context-menu;
+}
+p {
+    margin: 10px 20px;
+    color:  hsl(215, 51%, 70%);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    justify-content: left; 
+}
+
+.card-body__content-details{
+    text-align: left;
+    margin: 30px 20px;
+    height: 1.2rem;
+}
+
+.card-body__content-details{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin-bottom: 2rem;
+}
+
+.icon__description-ethereum, .icon__description-clock{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 34%;
+}
+
+.icon__description-ethereum{
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+
+.icon__description-clock{
+    color: hsl(215, 51%, 70%);
+    font-weight: 500;
+}
+
+.card-body__creation{
+    max-width: 20rem;
+    margin: 20px;
+    border-top: 1px solid hsl(0, 0%, 100%);
+}
+
+.card-body__creation__details{
+    display: flex;
+    margin-top: 15px;
+}
+
+.card-body__creation__image{
+    width: 2.9rem;
+    display: flex;
+    margin-left: 5px;
+    border: #fff 2px solid;
+    border-radius: 50%;
+}
+
+.card-body__creation__p{
+  font-size: 16px;
+  color: hsl(0, 0%, 100%);
+  margin-right: 5px;
+}
+
+.card-body__creation__p:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: context-menu;
+}
+
+.card-body__creation__span{
+    color:  hsl(215, 51%, 70%);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: rgb(255, 255, 255);
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+}
